@@ -44,7 +44,11 @@ var list = [ 'evelyn', 1, false, 20, null ];
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-myFunction(numero);     // [ 6 ]
+function myFunction(list) {
+  return list;
+};
+
+myFunction(list);     // [ 'evelyn', 1, false, 20, null ]
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
@@ -60,12 +64,35 @@ propriedades:
 - Se o parâmetro não for passado, a função deve retornar o objeto com todos
 os livros.
 */
-// ?
+
+ function book( name1, name2, name3 ) {
+     var obj = {
+      name1: { quantPag: 100, autor: 'Shakespeare', editora: 'Livraria Cultura'},
+      name2: { quantPag: 200, autor: 'Olavo de Carvalho', editora: 'Editora Três'},
+      nome3: { quantPag: 300, autor: 'Evelyn Oliveira', editora: 'Editora Quadrante'},
+     };
+      return obj;
+   }
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
 */
-// ?
+
+book()
+
+/* {
+  name1: { quantPag: 100, autor: 'Shakespeare', editora: 'Livraria Cultura' },
+  name2: {
+    quantPag: 200,
+    autor: 'Olavo de Carvalho',
+    editora: 'Editora Três'
+  },
+  nome3: {
+    quantPag: 300,
+    autor: 'Evelyn Oliveira',
+    editora: 'Editora Quadrante'
+  }
+} */
 
 /*
 Ainda com a função acima, imprima a quantidade de páginas de um livro qualquer,
