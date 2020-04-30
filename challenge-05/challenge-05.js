@@ -120,7 +120,7 @@ a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
 
-book.autorLivro = function() {
+book.editoraLivro = function() {
    return 'O livro ' + book(name1, name2, name3) + ' ' + ' foi publicado pela editora ' + obj(editora);
 }
 
