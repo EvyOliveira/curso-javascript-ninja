@@ -96,7 +96,8 @@ usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
 
-console.log( 'O livro Introdução ao HTML5 tem ' + books( ' Introdução ao HTML5' ).quantidadePaginas + ' páginas!' );
+var bookName = 'Smashing CSS';
+console.log( 'O livro ' + bookName + ' tem ' + books( bookName ).quantidadePaginas + ' páginas!' );
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
@@ -104,9 +105,7 @@ a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
 
-book.autorLivro = function() {
-   return 'O autor do livro ' + book(name1, name2, name3) + ' ' + ' é ' + obj(autor);
-}
+console.log( 'O autor do livro ' + bookName + ' é ' + book ( bookName).autor + '.');
 
 /*
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
@@ -114,8 +113,5 @@ a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
 
-book.editoraLivro = function() {
-   return 'O livro ' + book(name1, name2, name3) + ' ' + ' foi publicado pela editora ' + obj(editora);
-}
-
+console.log('O livro ' + bookName + ' foi publicado pela editora ' + book( bookName ).editora + '.'); 
 
