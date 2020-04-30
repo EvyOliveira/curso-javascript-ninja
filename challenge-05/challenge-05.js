@@ -99,18 +99,29 @@ Ainda com a função acima, imprima a quantidade de páginas de um livro qualque
 usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
-// ?
+
+book.quantPaginas = function() {
+   return 'O livro ' + book(name1, name2, name3) + ' ' + ' tem ' + obj(quantPag) + ' páginas! ';
+}
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
 a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
-// ?
+
+book.autorLivro = function() {
+   return 'O autor do livro ' + book(name1, name2, name3) + ' ' + ' é ' + obj(autor);
+}
 
 /*
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
 a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
-// ?
+
+book.autorLivro = function() {
+   return 'O livro ' + book(name1, name2, name3) + ' ' + ' foi publicado pela editora ' + obj(editora);
+}
+
+
