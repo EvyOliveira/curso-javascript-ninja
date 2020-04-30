@@ -3,7 +3,7 @@ Crie uma variável qualquer, que receba um array com alguns valores aleatórios
 - ao menos 5 - (fica por sua conta os valores do array).
 */
 
-var arr = [0, 1, 2, 3, 4, 5];
+var arr = [ 10, 'Evelyn', null, { a: 1 }, function() ];
 
 /*
 Crie uma função que receba um array como parâmetro, e retorne esse array.
@@ -17,7 +17,7 @@ function myFunction(arr) {
 Imprima o segundo índice do array retornado pela função criada acima.
 */
 
-myFunction(arr)[2]      // 2
+console.log( myfunction ( arr )[1] );
 
 /*
 Crie uma função que receba dois parâmetros: o primeiro, um array de valores; e o
@@ -25,30 +25,27 @@ segundo, um número. A função deve retornar o valor de um índice do array que
 no primeiro parâmetro. O índice usado para retornar o valor, deve ser o número passado no
 segundo parâmetro.
 */
-var numero = 6;
-var arr = [0, 1, 2, 3, 4, 5];
 
-function myFunction(arr, numero) {
-   return arr[0], numero;
-};
-
-myFunction(arr, numero);      // [ 0, 6 ]
+function arrayFunction( arr, index ) {
+  return arr[ index ];
+}
 
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
 
-var list = [ 'evelyn', 1, false, 20, null ];
+var list = [ 'Oliveira', 1, false, [ 20, 'Cristini' ], null ];
 
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-function myFunction(list) {
-  return list;
-};
 
-myFunction(list);     // [ 'evelyn', 1, false, 20, null ]
+console.log ( arrayFunction( list, 0 ) );
+console.log ( arrayFunction( list, 1 ) );
+console.log ( arrayFunction( list, 2 ) );
+console.log ( arrayFunction( list, 3 ) );
+console.log ( arrayFunction( list, 4 ) );
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
@@ -65,34 +62,33 @@ propriedades:
 os livros.
 */
 
- function book( name1, name2, name3 ) {
-     var obj = {
-      name1: { quantPag: 100, autor: 'Shakespeare', editora: 'Livraria Cultura'},
-      name2: { quantPag: 200, autor: 'Olavo de Carvalho', editora: 'Editora Três'},
-      nome3: { quantPag: 300, autor: 'Evelyn Oliveira', editora: 'Editora Quadrante'},
-     };
-      return obj;
-   }
+ function book( bookName ) {
+     var allbooks = {
+      'Segredos do Ninja JavaScript': {
+        quantidadePaginas: 488,
+        autor: 'John Resig & Bear Bibeault',
+        editora: 'NovaTec'
+      },
+       'Introdução ao HTML5': {
+         quantidadePaginas: 220,
+         autor: 'Bruce Lawson & Remy Sharp',
+         editora: 'Alta Books'
+      },
+       'Smashing CSS': {
+         quantidadePaginas: 283,
+         autor: 'Erick A. Meyer',
+         editora: 'Bookman'
+      },       
+   };
+   
+   return ! bookName ? allBooks : allBooks[ bookNAme ];
+ }
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
 */
 
-book()
-
-/* {
-  name1: { quantPag: 100, autor: 'Shakespeare', editora: 'Livraria Cultura' },
-  name2: {
-    quantPag: 200,
-    autor: 'Olavo de Carvalho',
-    editora: 'Editora Três'
-  },
-  nome3: {
-    quantPag: 300,
-    autor: 'Evelyn Oliveira',
-    editora: 'Editora Quadrante'
-  }
-} */
+console.log( book () );
 
 /*
 Ainda com a função acima, imprima a quantidade de páginas de um livro qualquer,
@@ -100,9 +96,7 @@ usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
 
-book.quantPaginas = function() {
-   return 'O livro ' + book(name1, name2, name3) + ' ' + ' tem ' + obj(quantPag) + ' páginas! ';
-}
+console.log( 'O livro Introdução ao HTML5 tem ' + books( ' Introdução ao HTML5' ).quantidadePaginas + ' páginas!' );
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
