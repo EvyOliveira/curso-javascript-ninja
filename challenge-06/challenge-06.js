@@ -48,13 +48,26 @@ function showTeamPosition( numero ) {
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 */
-// ?
+console.log ( arrayFunction( numero, 0 ) );
+console.log ( arrayFunction( numero, 1 ) );
+console.log ( arrayFunction( numero, 2 ) );
+console.log ( arrayFunction( numero, 3 ) );
+
+function addChampionship( numero ) {
+  return teams = ['UEFA Championship'][5];
+}
 
 /*
 Mostre os números de 20 a 30 no console (inclusive o 30), usando a estrutura de
 repetição "while".
 */
-// ?
+
+var num = 25;
+
+while( num > 19 && num <= 30) {
+  console.log ( num );
+  num++;
+}
 
 /*
 Crie uma função chamada `convertToHex`, com as seguintes características:
@@ -68,9 +81,59 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
     a frase:
     "Não temos o equivalente hexadecimal para [COR]."
 */
-// ?
+
+var cor = ['vermelho', 'azul', 'amarelo', 'roxo', 'rosa'];
+
+function convertToHex ( cor ) {
+   switch( cor ) {
+     case 1:
+       cor[0] = 'vermelho';
+       console.log('O hexadecimal para a cor ' + cor + ' ' + ' é #ff0000');
+     break;
+     case 2:
+       cor[2] = 'amarelo';
+       console.log('O haxadecimal para a cor ' + cor + ' ' + ' é #ffff00');
+     break;
+     case 3:
+       cor[1] = 'azul';
+       console.log('O haxadecimal para a cor ' + cor + ' ' + ' é #0000ff');
+     break;
+     case 5:
+       cor[4] = 'rosa';
+       console.log('O haxadecimal para a cor ' + cor + ' ' + ' é #ff007f');
+     break;
+     default:
+       console.log('Não temos o equivalente para a cor ' + cor);
+       }
+   }
 
 /*
 Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.
 */
-// ?
+
+convertToHex( 'verde' );
+// Não temos o equivalente para a cor verde
+
+convertToHex( cor[0] );
+// O hexadecimal para a cor vermelho é #ff0000
+
+convertToHex( cor[1] );
+// O hexadecimal para a cor vermelho é #0000ff
+
+convertToHex ( cor[2] );
+// O hexadecimal para a cor amarela é #ffff00
+
+convertToHex ( cor[3] );
+// Não temos o equivalente para a cor roxo
+
+convertToHex ( cor[4] );
+// O hexadecimal para a cor amarela é #ff007f
+
+convertToHex ( 'laranja' );
+// Não temos o equivalente para a cor laranja
+
+convertToHex ( 'branca' );
+// Não temos o equivalente para a cor branca
+
+
+
