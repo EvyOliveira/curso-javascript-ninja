@@ -133,11 +133,15 @@ anônima tem como seus argumentos.
 console.log( 'O resultado da soma é: ' + sum() + '.' );
   
 /*
-Agora declare outra variáveis chamadas `subtraction`, `multiplication`,
+Agora declare outras variáveis chamadas `subtraction`, `multiplication`,
 `division` e `mod`, e atribua à elas `calculator`, passando números
 diferentes para cada chamada.
 */
-// ?
+
+console.log( subtraction( calculator( 5, 2)  ) );
+console.log( multiplication( ( 20, 8 ) ) );
+console.log( division( (15, 3 ) ) );
+console.log( mod( ( 50, 10 ) ) );
 
 /*
 Mostre as variáveis acima no `console` (uma chamada de console por variável),
@@ -147,13 +151,9 @@ As suas respostas devem estar abaixo dos `console.log` referentes à cada
 chamada.
 */
 console.log( 'O resultado da subtração é:' );
-// ?
 
 console.log( 'O resultado da multiplicação é:' );
-// ?
 
 console.log( 'O resultado da divisão é:' );
-// ?
 
 console.log( 'O resto da divisão é:' );
-// ?
