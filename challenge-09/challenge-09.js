@@ -158,23 +158,23 @@ var mod = calculator( 50, 10 );
   */
     
   console.log( 'O resultado da subtração é:' );
-  subtraction( function( x, y ) {
+  console.log( subtraction( function( x, y ) {
     return x - y;
-  });
+  }));
 
   console.log( 'O resultado da multiplicação é:' );
-  multiplication( function( x, y ) {
+  console.log( multiplication( function( x, y ) {
     return x * y;
-  });
+  }));
 
   console.log( 'O resultado da divisão é:' );
-  division( function( x, y ) {
+  console.log( division( function( x, y ) {
     return x / y;
-  });
+  }));
     
   console.log( 'O resto da divisão é:' );
-  mod( function( x, y ) {
+  console.log( mod( function( x, y ) {
     return x % y;
-  });
+  }));
     
   } ();
