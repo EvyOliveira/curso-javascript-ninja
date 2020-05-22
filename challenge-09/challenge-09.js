@@ -28,7 +28,7 @@
      console.log(' Na função ' + myFunction +', o primeiro número é ' + number1 +'.');
      console.log(' Na função ' + myFunction +', o segundo  número é ' + number2 +'.');
       return number1 + number2;
-   )();
+    })();
 
   myFunction();
 
@@ -121,7 +121,7 @@
   passando dois números por parâmetro.
   */
 
-  var sum = calculator( 2,4 );
+  var sum = calculator( 2, 4 );
 
   /*
   Sabemos que `sum` agora tem uma função atribuída a ela, que é o retorno de
@@ -135,8 +135,8 @@
 
   console.log( 'O resultado da soma é: ' + sum() + '.' );
   console.log( sum(function( x, y ) {
-    return (x + y);
-  }));
+    return (x + y));
+  };
                    
   /*
   Agora declare outras variáveis chamadas `subtraction`, `multiplication`,
