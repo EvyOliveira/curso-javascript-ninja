@@ -14,12 +14,9 @@
 
   var five = Number('5');
   console.log( five + ' é número?', typeof five === 'number' );
-
-  var concat = (10) + 10;
-  console.log( '"' + concat + '" é uma string? E é igual a "1010"?', typeof concat === 'string' );
   
-   var concat = 10 + 1String(10);
-  console.log( '"' + concat + '" é uma string? E é igual a "1010"?', typeof concat === 'string' );
+  var concat = 10 + String( 10 );
+  console.log( '"' + concat + ' é uma string? E é igual a "1010"?"', typeof concat === 'string' );
 
   /*
   Voltando ao exemplo da calculadora, vamos utilizar mais uma abordagem
@@ -32,25 +29,25 @@
   */
 
   var operation = {
-    '+' : function sum ( num1, num2 ) {
+    '+' : function sum( num1, num2 ) {
       return  num1 + num2;
-    };
+    }
 
-    '-' : function subtraction ( num1, num2 ) {
+    '-' : function subtraction( num1, num2 ) {
       return num1 - num2;
-    };
+    }
 
-    '*' : function multiplication ( num1, num2 ) {
+    '*' : function multiplication( num1, num2 ) {
       return num1 * num2;
-    };
+    }
 
     '/' : function division ( num1, num2 ) {
       return num1 / num2;
-    };
+    }
 
     '%' : function mod ( num1, num2 ) {
       return num1 % num2;
-    };
+    }
 
   };
 
@@ -65,11 +62,11 @@
   - O desafio é fazer o retorno sem usar "if" ou "switch".
   */
 
-   function isOperatorValid ( operator ) (
+   function isOperatorValid( operator ) (
       return ( operator === '+' || operator === '-' || operator === '*' || operator === '/' || operator === '%' );
     };
 
-  console.log( typeof 1 === 'string' && typeof '2' === 'string' );
+  console.log( typeof 1 === 'string' || typeof '2' === 'string' );
   console.log( isOperatorValid( 'x' ) );
 
 /* De uma maneira reduzida: */
@@ -102,7 +99,7 @@ console.log( isOperatorValid( '+' ) );
   os dois parâmetros da função de retorno de "calculator".
   */
   
-function calculator ( operator ) {
+function calculator( operator ) {
   
   if( !isOperatorValid( operator ) ) {
     return false;
@@ -172,6 +169,7 @@ function calculator ( operator ) {
   - O segundo, a função de soma, passando os dois operandos.
   - Se "sum" for "false", mostrar no console a mensagem de erro.
   */
+
   if( sum ) {
     number1 = 10;
     number2 = 2;
